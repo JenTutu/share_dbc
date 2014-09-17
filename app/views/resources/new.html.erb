@@ -1,0 +1,41 @@
+<h1>Create Resource</h1>
+<%= form_for @resource do |f| %>
+<% if @resource.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@resource.errors.count, 'error') %> prohibited this resource from being saved: </h2>
+  <ul>
+    <% @resource.errors.full_messages.each do |a| %>
+    <li><%= a %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+<p>
+  <%= f.label :title %><br>
+  <%= f.text_field :title %>
+</p>
+<p>
+  <%= f.label :link %><br>
+  <%= f.text_field :link %>
+<p>
+  <%= f.label :description %><br>
+  <%= f.text_area :description %>
+</p>
+<p>
+<%= f.collection_check_boxes :subjects, @subjects, :id, :name %>
+</p>
+<p>
+  <ul class="learning_style_form">
+  <% for learning_style in LearningStyle.all %>
+  <li>
+  <%= check_box_tag("resource[learning_style_ids][]",learning_style.id, @resource.learning_styles.include?(learning_style)) %>
+
+  <small><%= learning_style.name %></small>
+  </li>
+  <% end %>
+  </ul>
+</p>
+<p>
+  <%= f.submit "Submit" %>
+</p>
+<% end %>

@@ -1,0 +1,162 @@
+
+body{
+  background-color: white;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+.intro h1{
+  color: rgba(50, 49, 63, 1);
+  margin-top:0;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+nav{
+  width: 100%;
+}
+
+nav ul{
+  background-color: rgba(50,49,63,0.9);
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  float: right;
+  list-style-type: none;
+  border-bottom: 7px solid #F06F4F;
+}
+
+nav ul li{
+  padding: 2px 8px;
+  float: right;
+  display: inline-block;
+}
+
+#Home{
+float: left;
+margin-left: 16px;
+font-size: 22px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #FFFBF0;
+}
+nav a:hover{
+  color: #F06F4F;
+}
+
+#new_resource > .learning_style_form{
+  padding: 0;
+  text-align: left;
+  list-style-type: none;
+}
+.learning_style_form > li{
+  display: inline;
+}
+
+#new_resource #resource_description{
+  width: 300px;
+  height: 200px;
+}
+
+.show_resource a{
+  text-decoration: none;
+  color: #32313F;
+}
+
+.show_resource a:hover{
+  color: #F06F4F;
+}
+
+.vote_button_list{
+  padding-bottom: 100px;
+  border-bottom: 3px solid #F06F4F;
+}
+
+.vote_button{
+  display: inline-block;
+  margin: 5px;
+}
+
+.vote_button a{
+  text-decoration: none;
+  color: #32313F;
+}
+
+.vote_button .fa-sort-up:hover{
+  color: #A9C5DA;
+}
+
+.vote_button .fa-sort-down:hover{
+  color: #F06F4F;
+}
+
+.learning_style_name{
+  font-size: 0.2em;
+
+}
+
+.comment_item{
+  padding: 10px 5px;
+  border-bottom: 1px solid #A9C5DA;
+}
+
+.comment_item .username{
+  font-size: 0.7em;
+}
+
+.comment_item .time{
+  color: #8d9690;
+  font-size: 0.5em;
+  margin-left: 10px;
+}
+.comment-textarea{
+  border: 1px solid #A9C5DA;
+  height: 40px;
+  width: 600px;
+}
+
+input[class="comment-submit"]{
+  float: left;
+  border: none;
+  background-color: #F06F4F;
+  color: black;
+}
+input[class="comment-submit"]:hover{
+  color: #F06F4F;
+  background-color: #32313F;
+}
+.chart{
+  margin-top: 100px;
+}
+.comments form{
+  margin-bottom: 40px;
+}
+.bar.positive{
+  fill: #A9C5DA;
+}
+.bar.positive:hover{
+  fill: #2f44ff;
+}
+.bar.negative{
+  fill: #F06F4F;
+}
+.bar.negative:hover {
+  fill: red ;
+}
+.chart-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+.delete_comment{
+  text-decoration: none;
+  font-size: 0.7em;
+  color: red;
+}
